@@ -1,276 +1,191 @@
-@font-face {
-  font-family: "VeganStyle";
-  src: url(./FancyMatterPersonalUse-lg5Ve.otf);
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
 }
 .container {
   width: 100%;
   height: 100vh;
 }
-
-.content {
-  position: relative;
-  width: 60%;
-  height: 100vh;
-  margin: auto;
+.navbar {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar a {
+  padding-right: 1.3rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar-left {
+  width: 90%;
+  float: left;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  width: auto;
+}
+.nine {
+  margin-right: 1.3rem;
+  cursor: pointer;
+  transform: scale(1.2);
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.nine:hover {
+  background-color: gray;
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+.mini-foto {
+  border-radius: 100%;
+  margin-right: 2rem;
+  cursor: pointer;
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.mini-foto:hover {
+  background-color: gray;
+  border: 2px solid gray;
+}
+section {
+  width: 100%;
+  height: 50%;
 }
 .image {
-  background-image: url(./images/bg.jpg);
-  float: left;
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-  height: 70%;
-  margin-top: 6rem;
-  border-radius: 1rem;
-}
-.form {
-  width: 45%;
-  float: right;
-  margin-top: 6rem;
-  height: 45%;
   text-align: center;
-  border: 1px solid gray;
-}
-.title {
-  margin-top: 2rem;
-  font-family: "VeganStyle";
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.formp {
-  margin-top: 3rem;
-}
-.btn {
-  display: block;
-  width: 18rem;
   margin: auto;
-  margin-bottom: 1rem;
-  height: 2.2rem;
-  background-color: rgb(226, 226, 226, 0.5);
-  outline: none;
-  border: 1px solid gray;
-  padding: 1.2rem;
+
+  width: 17rem;
+  display: flex;
+  justify-content: center;
 }
-.btn2 {
-  width: 18rem;
+
+.search {
+  text-align: center;
+}
+input[type="search"] {
+  width: 35rem;
+  outline: none;
+  height: 2.5rem;
+  border-radius: 10rem;
+  position: relative;
+  border: 2px solid #eeeeee;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+input[type="search"]:hover {
+  box-shadow: 0 0 10px 2px rgb(233, 233, 233);
+}
+.search i {
+  margin-left: 0.7rem;
+  margin-top: 1.7rem;
+  z-index: 1;
+  position: absolute;
+  color: #8b959e;
+  width: 1rem;
+}
+.mic {
+  margin-left: 32.9rem !important;
+  z-index: 1;
+}
+.key {
+  position: absolute;
+  margin-left: 30.8rem !important;
+  z-index: 1;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
   height: 2rem;
-  border-radius: 0.5rem;
-  background-color: rgba(7, 135, 255, 0.3);
-  color: #fff;
-  border: none !important;
+  margin: auto;
 }
 .link {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(238, 237, 237);
+  padding: 1rem;
+  width: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 .link a {
-  color: rgb(66, 103, 178, 1);
-  text-decoration: none;
+  color: #333;
 }
-.sifre_unut {
+.link:hover {
+  box-shadow: 0 0 10px 2px rgb(233, 233, 233);
+}
+.text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+footer {
+  height: 14.3%;
+  width: 100%;
+  background-color: #eceaea;
+}
+.footer-left {
+  width: 50%;
+  margin: auto;
+  float: left;
+  display: flex;
   margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }
-.sifre_unut a {
-  text-decoration: none;
-  color: rgba(153, 153, 153);
+.from {
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  width: 20%;
+  height: 2rem;
 }
-.login {
-  width: 45%;
+hr {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.about a {
+  margin-right: 1.5rem;
+  color: black;
+}
+.about a:hover {
+  text-decoration: underline;
+}
+.footer-right {
+  width: 20%;
+  height: auto;
+  margin: auto;
   float: right;
-  margin-top: 1rem;
-  height: 9%;
-  text-align: center;
-  padding: 1.5rem 5rem;
-  border: 1px solid gray;
-  font-size: 18px;
+  display: flex;
+  margin-top: 2rem;
 }
-.login a {
-  color: rgb(3, 152, 189);
-  text-decoration: none;
+.footer-right a {
+  color: black;
+  margin-left: 1.5rem;
 }
-.paragraf p {
-  width: 45%;
-  float: right;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.app {
-  text-align: center;
-}
-.app1 {
-  text-align: center;
-  display: inline-block;
-  width: 10rem;
-  height: 4rem;
-  background-color: black;
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  margin-left: 4rem;
-}
-.app2 {
-  display: inline-block;
-  width: 10rem;
-  height: 4rem;
-  background-color: black;
-  padding: 1.2rem;
-  text-align: center;
-  border-radius: 0.5rem;
-  margin-right: 2rem;
-  margin-left: 0.5rem;
-}
-.app1,
-.app2,
-a {
-  color: #fff;
-  text-decoration: none;
-}
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 0.7rem;
-  }
-  .content {
-    margin: auto;
-    height: 100vh;
-    text-align: center;
-  }
-  .image {
-    width: 0;
-    height: 0rem;
-  }
-  .form {
-    width: 100%;
-    height: 30rem;
-    left: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-  .btn {
-    display: block;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 1rem;
-    height: 2.2rem;
-    background-color: rgb(226, 226, 226, 0.5);
-    outline: none;
-    border: 1px solid gray;
-    padding: 1.2rem;
-  }
-
-  .login {
-    width: 100%;
-    display: block;
-  }
-  .paragraf {
-    width: 100%;
-    display: flex;
-    margin-left: 8rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 0.7rem;
-  }
-  .content {
-    margin: auto;
-    height: 100vh;
-    text-align: center;
-  }
-  .image {
-    width: 0;
-    height: 0rem;
-  }
-  .form {
-    width: 100%;
-    height: 30rem;
-    left: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-  .btn {
-    display: block;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 1rem;
-    height: 2.2rem;
-    background-color: rgb(226, 226, 226, 0.5);
-    outline: none;
-    border: 1px solid gray;
-    padding: 1.2rem;
-  }
-
-  .login {
-    width: 100%;
-    display: block;
-  }
-  .paragraf {
-    width: 100%;
-    display: flex;
-    margin-left: 8rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  html {
-    font-size: 0.3rem;
-  }
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
-  .content {
-    width: 100%;
-    height: 100vh;
-  }
-  .image {
-    width: 0;
-    height: 0rem;
-  }
-  .form {
-    width: 100%;
-    height: 90rem;
-    left: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-  .formp {
-    width: 100%;
-    height: 90rem;
-    left: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-  .btn {
-    display: block;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 1rem;
-    height: 10rem;
-    background-color: rgb(226, 226, 226, 0.5);
-    outline: none;
-    border: 1px solid gray;
-  }
-  .btn2 {
-    display: block;
-    width: 60%;
-    height: 10rem;
-    margin: auto;
-  }
-
-  .login {
-    width: 100%;
-    display: block;
-  }
-  .paragraf {
-    width: 100%;
-    display: flex;
-    margin-left: 8rem;
-  }
-  .app {
-    width: 100%;
-  }
+.footer-right a:hover {
+  text-decoration: underline;
 }

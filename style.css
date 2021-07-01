@@ -64,6 +64,7 @@ header {
 }
 
 section {
+  height: 35rem;
   width: 100%;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),

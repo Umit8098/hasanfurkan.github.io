@@ -1,15 +1,12 @@
-const body = document.querySelector("body")
-const darkButton = document.querySelector(".dark");
-const form = document.querySelector("form")
-
-darkButton.addEventListener("click", ()=>{
-    darkButton.classList.toggle("dark");
-    if(darkButton.classList.contains("dark")){
-        body.style = `background-color: black; color: #fff; ` ;
-        form.style = `border: 4px solid #fff;`;
+const icon = document.getElementById("icon");
+let num = 0;
+icon.onclick = function() {
+    if(num == 0){
+        num = 1;
+        icon.src = "./assets/pause.png";
     }else{
-        body.style = `background-color: #fff; color: black;` ;
-        form.style = `border: 4px solid black;`;
+        num = 0
+        icon.src = "./assets/play.png";
     }
-    
-});
+}
+
